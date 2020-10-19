@@ -1,0 +1,95 @@
+
+
+body{
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content:start;
+    // background-image: linear-gradient(to right,rgb(255, 102, 102),rgb(255, 51, 51));
+
+}
+.logo{
+    display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+    // width: 50%;
+    margin:auto;
+
+  height: 30vh;
+}
+
+.marketing-icon{
+    margin-right: 1em;
+}
+// .navbar{
+//     display: flex;
+//     border-bottom: black 1px solid;
+//     border-top: black 1px solid;
+//     flex-grow: 3;
+//     justify-content: space-between;
+
+// }
+// .flex{display:flex;}
+
+// .grow2{
+//     flex-grow: 2;
+// }
+
+nav {
+    margin: 25px;
+    // background: #f6f6f6;
+    // background-image: radial-gradient(#f6f6f6,#fefefe); //linear-gradient(to right,rgb(255, 102, 102),rgb(255, 51, 51));
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 5%, rgba(249,249,249,1) 10%, rgba(236,228,228,1) 45%, rgba(249,249,249,1) 90%, rgba(255,255,255,1) 95%);
+    padding: 16px;
+    max-height: 30px;
+    .menuItems {
+      list-style: none;
+      display: flex;
+  
+      li {
+        margin: 50px;
+  
+        a {
+          text-decoration: none;
+          color: #8f8f8f;
+          font-size: 24px;
+          font-weight: 400;
+          transition: all 0.5s ease-in-out;
+          position: relative;
+          text-transform: uppercase;
+  
+          &::before {
+            content: attr(data-item);
+            transition: 0.5s;
+            color: #8254ff;
+            position: absolute;
+            top: 4px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 0;
+            overflow: hidden;
+          }
+  
+          &:hover {
+            &::before {
+              width: 100%;
+              transition: all 0.5s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+  .nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: Hack, monospace;
+  }
